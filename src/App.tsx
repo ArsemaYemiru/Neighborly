@@ -1,16 +1,17 @@
-import { Flex, Button } from '@mantine/core'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Tasks from "./pages/tasks";
 
 function App() {
 
   return (
-    <>
-      <Flex>
-        <Button>
-          hello world
-        </Button>
-      </Flex>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tasks" element={<Tasks />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App
