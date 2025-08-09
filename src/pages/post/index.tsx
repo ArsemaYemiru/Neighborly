@@ -1,7 +1,7 @@
 import Hero from "../../components/Hero";
 import { Shell } from "../../components/layout ";
 
-export default function Tasks() {
+export default function Post() {
   return (
     <Shell>
         <Hero />
